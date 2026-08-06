@@ -1,11 +1,17 @@
 /*
  * File: calculator.css
- * Purpose: Styles specific to calculator pages and calculator UI components.
- * Notes: Keep calculator-specific rules isolated here.
+ * Purpose: Styles for calculator cards and calculator-oriented content blocks.
+ * Notes: This layer keeps calculator-specific UI styling isolated and reusable.
  */
 
-/* Section: Calculator Layout */
+.calculator-card {
+  min-height: 220px;
+}
 
-/* Section: Calculator Controls */
+.calculator-card.is-hidden {
+  display: none;
+}
 
-/* Section: Result Display */
+.category-card {
+  text-align: center;
+}

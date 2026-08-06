@@ -1,9 +1,33 @@
 /*
  * File: animations.css
- * Purpose: Motion and transition rules for UI enhancement.
- * Notes: Keep animations lightweight and accessible.
+ * Purpose: Motion and transition rules for the shared experience.
+ * Notes: Animations remain lightweight and accessible.
  */
 
-/* Section: Transitions */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0) scale(1.03);
+  }
+}
 
-/* Section: Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card,
+.feature-item,
+.faq-item,
+.stat-card {
+  animation: fadeUp 0.45s ease both;
+}

@@ -1,11 +1,67 @@
 /*
  * File: responsive.css
- * Purpose: Responsive design rules for mobile, tablet, and desktop layouts.
- * Notes: Add breakpoints and adaptive behavior here.
+ * Purpose: Responsive breakpoints and layout adjustments.
+ * Notes: The design is mobile-first and scales across desktop and tablet sizes.
  */
 
-/* Section: Mobile */
+@media (max-width: 980px) {
+  .nav-menu {
+    display: none;
+  }
 
-/* Section: Tablet */
+  .hamburger {
+    display: flex;
+  }
 
-/* Section: Desktop */
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-actions .search-trigger,
+  .nav-actions .btn-small {
+    display: none;
+  }
+
+  .search-bar,
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: var(--radius-md);
+  }
+
+  .search-bar button,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .grid-4,
+  .stats-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 4rem;
+  }
+
+  .why-choose,
+  .newsletter,
+  .footer-cta {
+    padding: 1.5rem;
+  }
+
+  .footer-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
