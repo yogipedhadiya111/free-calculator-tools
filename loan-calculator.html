@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator | EMI, Monthly Payment & Amortization Schedule</title>
+    <meta name="description" content="Estimate monthly loan payments, total interest, and amortization schedules with our free loan calculator online." />
+    <meta name="keywords" content="loan calculator, loan payment calculator, monthly payment calculator, personal loan calculator, home loan calculator, EMI calculator, amortization calculator" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://yogipedhadiya111.github.io/free-calculator-tools/loan-calculator.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Loan Calculator | EMI, Monthly Payment & Amortization Schedule" />
+    <meta property="og:description" content="Calculate monthly payments, total interest, and repayment schedules for loans in seconds." />
+    <meta property="og:url" content="https://yogipedhadiya111.github.io/free-calculator-tools/loan-calculator.html" />
+    <meta property="og:image" content="https://yogipedhadiya111.github.io/free-calculator-tools/assets/images/loan-hero.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Loan Calculator | EMI, Monthly Payment & Amortization Schedule" />
+    <meta name="twitter:description" content="See your monthly payment estimate, total interest, and amortization schedule in one place." />
+    <meta name="twitter:image" content="https://yogipedhadiya111.github.io/free-calculator-tools/assets/images/loan-hero.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      (function(){
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', storedTheme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Free Calculator Tools home">
+          <span class="logo-icon" aria-hidden="true">L</span>
+          <span class="logo-text">Free Calculator Tools</span>
+        </a>
+        <nav class="nav-menu" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="loan-calculator.html">Loan Calculator</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">☀️</button>
+          <a class="btn btn-primary" href="#calculator">Use Calculator</a>
+          <button class="hamburger" id="hamburger" type="button" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="loan-calculator.html">Loan Calculator</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero hero-small" aria-labelledby="page-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Loan planning made simple</p>
+            <h1 id="page-title">Loan Calculator for EMI, interest, and payoff planning.</h1>
+            <p class="hero-description">Estimate your monthly payment, total interest, and total amount due with a fast and accurate amortization calculator built for modern borrowing decisions.</p>
+          </div>
+          <div class="hero-card">
+            <img src="assets/images/loan-illustration.svg" alt="Illustration of a loan schedule and payment chart" width="640" height="480" loading="eager" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="calculator" aria-labelledby="calculator-heading">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Interactive calculator</p>
+            <h2 id="calculator-heading">Model your loan before you commit.</h2>
+          </div>
+          <div class="calc-grid">
+            <form class="card calculator-card" id="loan-form" novalidate>
+              <div class="form-grid">
+                <label for="loanAmount">Loan amount</label>
+                <input id="loanAmount" name="loanAmount" type="number" min="1000" step="100" value="250000" required aria-describedby="loan-help" />
+                <p class="form-help" id="loan-help">Enter the amount you plan to borrow.</p>
+              </div>
+              <div class="form-grid">
+                <label for="interestRate">Annual interest rate (%)</label>
+                <input id="interestRate" name="interestRate" type="number" min="0" max="100" step="0.01" value="7.5" required />
+              </div>
+              <div class="form-grid">
+                <label for="loanTerm">Loan term (years)</label>
+                <input id="loanTerm" name="loanTerm" type="number" min="1" max="40" step="1" value="20" required />
+              </div>
+              <div class="actions-row">
+                <button class="btn btn-primary" type="submit">Calculate</button>
+                <button class="btn btn-secondary" type="button" id="saveCalc">Save</button>
+              </div>
+              <p class="status-message" id="statusMessage" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="results-stack">
+              <div class="card result-card">
+                <div class="result-row"><span>Monthly payment</span><strong id="monthlyPayment">$0.00</strong></div>
+                <div class="result-row"><span>Total interest</span><strong id="totalInterest">$0.00</strong></div>
+                <div class="result-row"><span>Total payment</span><strong id="totalPayment">$0.00</strong></div>
+                <div class="result-row"><span>Repayment term</span><strong id="termSummary">0 months</strong></div>
+              </div>
+              <div class="card actions-card">
+                <h3>Share and export</h3>
+                <div class="actions-row">
+                  <button class="btn btn-secondary" type="button" id="copyResult">Copy result</button>
+                  <button class="btn btn-secondary" type="button" id="shareResult">Share</button>
+                  <button class="btn btn-secondary" type="button" id="printResult">Download PDF</button>
+                </div>
+              </div>
+              <div class="card chart-card">
+                <h3>Principal vs interest</h3>
+                <div id="chart" class="chart" aria-label="Principal and interest chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="schedule-heading">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Amortization</p>
+            <h2 id="schedule-heading">See how balance declines over time.</h2>
+          </div>
+          <div class="table-card card">
+            <table class="data-table">
+              <caption>Sample amortization schedule for the current loan scenario.</caption>
+              <thead>
+                <tr><th scope="col">Payment</th><th scope="col">Principal</th><th scope="col">Interest</th><th scope="col">Balance</th></tr>
+              </thead>
+              <tbody id="amortizationBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="guide-heading">
+        <div class="container content-stack">
+          <article class="card article-card">
+            <h2 id="guide-heading">How a loan calculator works</h2>
+            <p>A <strong>loan calculator</strong> turns a few inputs into a practical repayment plan. By combining the loan amount, annual interest rate, and number of years, the calculator estimates how much you will pay each month and how much of that payment goes toward interest versus principal. This helps you compare loan offers and test alternate repayment terms without making a financial commitment.</p>
+            <p>The formula behind a standard amortizing loan is based on regular monthly payments. The monthly payment is calculated using the principal balance, the periodic interest rate, and the total number of payments. Once the monthly payment is known, the tool can estimate the total interest cost and create an amortization schedule that shows how the loan balance decreases over time.</p>
+            <h3>Why this matters for borrowers</h3>
+            <p>A good <strong>loan payment calculator</strong> is useful because it offers clarity. Instead of relying on rough assumptions, you can estimate your monthly responsibilities before applying for a loan. That is especially helpful when you are reviewing personal loans, car loans, or mortgage options while trying to stay within a monthly budget.</p>
+            <p>Using a <strong>monthly payment calculator</strong> early in the process can also reveal whether a lower monthly installment comes with a much higher overall cost. A longer term may reduce the monthly burden, but it often increases total interest over time. A shorter term can increase the monthly payment while reducing the amount of interest paid over the life of the loan.</p>
+            <h3>The formula in plain language</h3>
+            <p>The mathematical formula uses the principal amount, monthly interest rate, and total number of payments. The monthly interest rate is the annual rate divided by 12, and the loan term is converted into the number of monthly payments. The payment formula then applies an annuity calculation that spreads the balance evenly across the life of the loan. The result is a steady monthly payment that includes both principal and interest.</p>
+            <p>When you review the amortization table, you can see that early payments pay more interest, while later payments contribute more toward the principal balance. That is why many borrowers prefer to understand the full picture before committing to a loan structure. A reliable <strong>personal loan calculator</strong> or <strong>home loan calculator</strong> can help make this process simpler and more transparent.</p>
+            <h3>Example scenario</h3>
+            <p>Imagine a loan of $250,000 with a 7.5% annual interest rate and a 20-year term. The estimated monthly payment would be around $2,000, depending on rounding and compounding conventions. Over the full term, the borrower would pay a substantial amount of interest, which is why testing shorter terms or lower rates can have a lasting impact on affordability. A <strong>car loan calculator</strong> or <strong>EMI calculator</strong> works in the same way by giving you a practical estimate of the repayment burden before the contract is finalized.</p>
+            <h3>Benefits of using this tool</h3>
+            <p>One of the biggest benefits is that it removes guesswork from budgeting. You can compare multiple lending options, understand the effect of changing rates, and decide whether a proposed monthly payment fits your income and expenses. Another major benefit is visibility. Because the amortization schedule shows how each payment affects the outstanding balance, you can understand where your money is going and whether extra payments could reduce interest costs in the long run.</p>
+            <p>Many people also use this tool to evaluate whether they are ready for a larger financial commitment. A <strong>loan payoff calculator</strong> mindset is useful even before you start repayment, because it encourages early planning and better cash-flow decisions. This is especially important with long-term obligations where small differences in rate or term can become significant over time.</p>
+            <h3>Common mistakes to avoid</h3>
+            <p>Borrowers sometimes focus only on the monthly payment and forget to review the total interest. That can lead to choosing a loan that feels affordable each month but costs much more over time. Another common mistake is using an interest rate that is not the true annual rate or ignoring fees and insurance that can increase overall borrowing costs. The calculator here is designed to help you estimate the core loan structure, but it is still wise to review the full lender terms before signing anything.</p>
+            <h3>Practical tips</h3>
+            <p>Compare at least three scenarios before making a decision. Try a shorter term, a lower rate, and a slightly smaller loan amount to see how each changes the payment. If you are evaluating a <strong>personal loan calculator</strong> for debt consolidation, check whether the monthly savings are worth the overall interest cost. If you are planning for a home purchase, compare a few rate scenarios to understand how sensitive the payment is to market changes.</p>
+            <p>For long-term borrowing, keep a reserve for changes in income or expense. Even a modest gap between your estimate and the lender offer can matter. Being prepared helps you avoid stress and makes it easier to stay consistent with your repayment plan.</p>
+            <h3>Conclusion</h3>
+            <p>A solid loan plan begins with clear numbers. This calculator gives you a practical starting point for evaluating monthly obligations, understanding interest costs, and reviewing how repayments progress over time. Whether you need a loan calculator online for budgeting, a monthly payment calculator for planning, or an amortization calculator for forecasting, the tool is designed to support confident financial decisions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq-2-heading">
+        <div class="container faq-wrap">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-2-heading">Frequent questions about payments and interest.</h2>
+          </div>
+          <div class="faq-list">
+            <article class="faq-item active">
+              <button class="faq-question" type="button" aria-expanded="true">How is the monthly payment calculated?</button>
+              <div class="faq-answer"><p>It uses the loan amount, the monthly interest rate, and the number of payments to estimate a fixed monthly installment.</p></div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">Can I use this for a mortgage?</button>
+              <div class="faq-answer"><p>Yes. It is helpful for estimating principal and interest obligations for many amortizing loans, including mortgages.</p></div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">Does the calculator include fees?</button>
+              <div class="faq-answer"><p>The calculator focuses on the core loan payment estimate. Review lender terms separately for fees, insurance, and other charges.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="related-heading">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Related calculators</p>
+            <h2 id="related-heading">Compare other budgeting and finance tools.</h2>
+          </div>
+          <div class="grid cards">
+            <article class="card"><h3>EMI Calculator</h3><p>Estimate monthly installments for a variety of financing products.</p></article>
+            <article class="card"><h3>Amortization Calculator</h3><p>Break down principal and interest over each payment schedule.</p></article>
+            <article class="card"><h3>Debt Payoff Planner</h3><p>Review repayment strategies for reducing balances faster.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Loan Calculator</h2>
+          <p>Plan borrowing with clear estimates and transparent repayment insights.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan-calculator.html">Loan Calculator</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the monthly payment calculated?","acceptedAnswer":{"@type":"Answer","text":"It uses the principal balance, interest rate, and number of monthly payments to estimate the fixed monthly installment."}},{"@type":"Question","name":"Can I use this for a mortgage?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is helpful for estimating principal and interest obligations for many amortizing loans, including mortgages."}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yogipedhadiya111.github.io/free-calculator-tools/"},{"@type":"ListItem","position":2,"name":"Loan Calculator","item":"https://yogipedhadiya111.github.io/free-calculator-tools/loan-calculator.html"}]}</script>
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/seo.js"></script>
+  </body>
+</html>

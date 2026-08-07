@@ -2,419 +2,214 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta name="google-site-verification" content="OjJMCCI6Ivof_ekpFKnTNrPHmCRROi_Zg5svwia96uc" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Free Calculator Tools offers fast, accurate, and modern calculators for finance, health, math, business, and daily life." />
-    <meta name="keywords" content="online calculator, free calculator, finance calculator, health calculator, math calculator, business calculator" />
-    <meta name="author" content="Free Calculator Tools" />
-    <meta name="theme-color" content="#2563EB" />
+    <title>Loan Calculator Online | Free EMI & Monthly Payment Planner</title>
+    <meta name="description" content="Use our loan calculator online to estimate monthly payments, total interest, and amortization schedules with clarity and confidence." />
+    <meta name="keywords" content="loan calculator, loan calculator online, monthly payment calculator, EMI calculator, amortization calculator" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0f172a" />
     <link rel="canonical" href="https://yogipedhadiya111.github.io/free-calculator-tools/" />
-    <link rel="manifest" href="manifest.json" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Free Calculator Tools" />
-    <meta property="og:title" content="Free Calculator Tools - Modern Online Calculators" />
-    <meta property="og:description" content="Discover a premium collection of free calculators for finance, health, math, business, science, and more." />
+    <meta property="og:title" content="Loan Calculator Online | Free EMI & Monthly Payment Planner" />
+    <meta property="og:description" content="Plan loans confidently with a fast, accurate, and accessible calculator for monthly payments, total interest, and payoff schedules." />
     <meta property="og:url" content="https://yogipedhadiya111.github.io/free-calculator-tools/" />
-    <meta property="og:image" content="https://yogipedhadiya111.github.io/free-calculator-tools/images/social/og-image.png" />
+    <meta property="og:image" content="https://yogipedhadiya111.github.io/free-calculator-tools/assets/images/loan-hero.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Free Calculator Tools - Modern Online Calculators" />
-    <meta name="twitter:description" content="Discover fast and accurate calculators built for everyday decisions." />
-    <meta name="twitter:image" content="https://yogipedhadiya111.github.io/free-calculator-tools/images/social/twitter-image.png" />
-    <title>Free Calculator Tools | Modern Online Calculators</title>
+    <meta name="twitter:title" content="Loan Calculator Online | Free EMI & Monthly Payment Planner" />
+    <meta name="twitter:description" content="Plan loans confidently with accurate monthly payment estimates and payoff insights." />
+    <meta name="twitter:image" content="https://yogipedhadiya111.github.io/free-calculator-tools/assets/images/loan-hero.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/calculator.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="icon" type="image/png" href="Logocl.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="manifest" href="manifest.json" />
     <script>
-      (function () {
-        const storedTheme = localStorage.getItem('theme');
-        const theme = storedTheme || 'light';
-        document.documentElement.setAttribute('data-theme', theme);
+      (function(){
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', storedTheme);
       })();
     </script>
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
-
     <header class="header">
       <div class="container nav">
-        <a class="logo" href="index.html" aria-label="Free Calculator Tools homepage">
-          <span class="logo-icon" aria-hidden="true">C</span>
+        <a class="logo" href="index.html" aria-label="Free Calculator Tools home">
+          <span class="logo-icon" aria-hidden="true">L</span>
           <span class="logo-text">Free Calculator Tools</span>
         </a>
-
-        <nav class="nav-menu" aria-label="Primary navigation">
-          <a class="nav-link" href="#calculators">Calculators</a>
-          <a class="nav-link" href="#categories">Categories</a>
-          <a class="nav-link" href="#features">Features</a>
-          <a class="nav-link" href="#faq">FAQ</a>
-          <a class="nav-link" href="pages/about.html">About</a>
-          <a class="nav-link" href="pages/contact.html">Contact</a>
+        <nav class="nav-menu" aria-label="Primary">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="loan-calculator.html">Loan Calculator</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </nav>
-
         <div class="nav-actions">
-          <form class="search-trigger" role="search" aria-label="Quick search">
-            <label class="sr-only" for="quick-search">Search calculators</label>
-            <input id="quick-search" type="search" placeholder="Search" />
-          </form>
-          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
-            <span class="icon" aria-hidden="true">☀️</span>
-          </button>
-          <a class="btn btn-primary btn-small" href="#newsletter">Get Started</a>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">☀️</button>
+          <a class="btn btn-primary" href="loan-calculator.html">Calculate Now</a>
           <button class="hamburger" id="hamburger" type="button" aria-label="Toggle mobile menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </button>
         </div>
       </div>
-
       <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-        <a class="nav-link" href="#calculators">Calculators</a>
-        <a class="nav-link" href="#categories">Categories</a>
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#faq">FAQ</a>
-        <a class="nav-link" href="pages/about.html">About</a>
-        <a class="nav-link" href="pages/contact.html">Contact</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="loan-calculator.html">Loan Calculator</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </div>
     </header>
 
     <main id="content">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-bg" aria-hidden="true">
-          <div class="blob blob-1"></div>
-          <div class="blob blob-2"></div>
-          <div class="blob blob-3"></div>
-        </div>
-        <div class="container hero-content">
-          <p class="eyebrow">Trusted by students, professionals, and business teams</p>
-          <h1 id="hero-title">Make every calculation faster with <span class="text-gradient">smart, reliable tools</span>.</h1>
-          <p class="hero-description">Explore a growing library of free online calculators for finance, health, education, math, business, and daily life.</p>
-
-          <form class="search-bar" id="hero-search-form" role="search">
-            <label class="sr-only" for="calculator-search">Search all calculators</label>
-            <input id="calculator-search" name="q" type="search" placeholder="Search calculators by name or category" autocomplete="off" />
-            <button type="submit">Search</button>
-          </form>
-
-          <div class="popular-tags" aria-label="Popular searches">
-            <a class="tag" href="#calculators">EMI</a>
-            <a class="tag" href="#calculators">BMI</a>
-            <a class="tag" href="#calculators">Age</a>
-            <a class="tag" href="#calculators">GST</a>
-            <a class="tag" href="#calculators">Percentage</a>
-            <a class="tag" href="#calculators">SIP</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="calculators" aria-labelledby="popular-heading">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Popular calculators</p>
-            <h2 id="popular-heading">Fast tools for everyday decisions</h2>
-            <p class="section-subtitle">Every calculator is designed to be clear, accurate, responsive, and ready for future expansion.</p>
-          </div>
-
-          <div class="grid grid-4" id="calculator-grid">
-            <article class="card calculator-card" data-search="emi finance loan repayment">
-              <div class="card-icon" aria-hidden="true">💰</div>
-              <h3>EMI Calculator</h3>
-              <p>Estimate monthly loan payments with principal, rate, and tenure.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="bmi health body mass index">
-              <div class="card-icon" aria-hidden="true">🩺</div>
-              <h3>BMI Calculator</h3>
-              <p>Check body mass index using height and weight inputs.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="age date time birthday">
-              <div class="card-icon" aria-hidden="true">📅</div>
-              <h3>Age Calculator</h3>
-              <p>Calculate age precisely from birth date to today.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="gst tax business finance">
-              <div class="card-icon" aria-hidden="true">📊</div>
-              <h3>GST Calculator</h3>
-              <p>Compute GST amount quickly for invoices and pricing.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="percentage math education">
-              <div class="card-icon" aria-hidden="true">➗</div>
-              <h3>Percentage Calculator</h3>
-              <p>Find percent change, increase, decrease, and ratio values.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="sip finance mutual investment">
-              <div class="card-icon" aria-hidden="true">📈</div>
-              <h3>SIP Calculator</h3>
-              <p>Plan investments and estimate future wealth growth.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="discount shopping sale">
-              <div class="card-icon" aria-hidden="true">🏷️</div>
-              <h3>Discount Calculator</h3>
-              <p>Calculate sale price and savings instantly.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-            <article class="card calculator-card" data-search="tip service bill">
-              <div class="card-icon" aria-hidden="true">💡</div>
-              <h3>Tip Calculator</h3>
-              <p>Split bills quickly and divide totals with ease.</p>
-              <a class="card-link" href="#">Use calculator <span>→</span></a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-muted" id="categories" aria-labelledby="categories-heading">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Categories</p>
-            <h2 id="categories-heading">Choose by purpose and use case</h2>
-            <p class="section-subtitle">The structure is designed to scale from a few calculators to a full library of 1000+ tools.</p>
-          </div>
-
-          <div class="grid grid-4">
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">💵</div>
-              <h3>Finance</h3>
-              <p>Loan, tax, investment, budgeting, and savings calculators.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">🧘</div>
-              <h3>Health</h3>
-              <p>Fitness, nutrition, medical, and wellness calculators.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">🎓</div>
-              <h3>Education</h3>
-              <p>Study, grade, conversion, and academic calculators.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">➕</div>
-              <h3>Math</h3>
-              <p>Arithmetic, algebra, geometry, and statistical tools.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">🏢</div>
-              <h3>Business</h3>
-              <p>Pricing, margin, profit, and planning calculators.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">⏰</div>
-              <h3>Date & Time</h3>
-              <p>Duration, age, countdown, and scheduling calculators.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">🔁</div>
-              <h3>Conversion</h3>
-              <p>Units, measurements, temperatures, and size conversions.</p>
-            </article>
-            <article class="card category-card">
-              <div class="card-icon" aria-hidden="true">🧪</div>
-              <h3>Science</h3>
-              <p>Density, speed, chemistry, and scientific conversions.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="why-heading">
-        <div class="container why-choose">
-          <div class="why-grid">
-            <div class="why-content">
-              <p class="eyebrow">Why choose us</p>
-              <h2 id="why-heading">A premium experience built for scale and trust.</h2>
-              <p>Every page follows a reusable foundation for SEO, accessibility, performance, and future integrations.</p>
-              <ul class="why-list">
-                <li class="why-item">
-                  <div class="icon" aria-hidden="true">⚡</div>
-                  <div>
-                    <h4>Lightning-fast experience</h4>
-                    <p>Optimized for speed, clarity, and smooth interaction.</p>
-                  </div>
-                </li>
-                <li class="why-item">
-                  <div class="icon" aria-hidden="true">🔒</div>
-                  <div>
-                    <h4>Secure and dependable</h4>
-                    <p>Built with a clean structure that supports future API and analytics integrations.</p>
-                  </div>
-                </li>
-                <li class="why-item">
-                  <div class="icon" aria-hidden="true">📱</div>
-                  <div>
-                    <h4>Responsive by design</h4>
-                    <p>Desktop, tablet, and mobile layouts all share the same core system.</p>
-                  </div>
-                </li>
-              </ul>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow hero-badge"><span class="hero-badge-dot" aria-hidden="true"></span>Trusted confidence for smarter borrowing</p>
+            <h1 id="hero-title">Estimate your loan payments with clarity and confidence.</h1>
+            <p class="hero-description">Use our loan calculator online to understand monthly payments, interest costs, and repayment timelines before you borrow.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="loan-calculator.html">Open the Loan Calculator</a>
+              <a class="btn btn-secondary" href="about.html">Learn More</a>
             </div>
-            <div class="stats-grid" aria-label="Key statistics">
-              <div class="stat-card">
-                <div class="stat-number" data-count="1000">0</div>
-                <div class="stat-label">Scalable calculator architecture</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number" data-count="100">0</div>
-                <div class="stat-label">Performance-focused structure</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number" data-count="24">0</div>
-                <div class="stat-label">Hours of thoughtful design</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number" data-count="1">0</div>
-                <div class="stat-label">Reusable master template</div>
+            <div class="hero-meta" aria-label="Highlights">
+              <span class="hero-pill">Instant estimates</span>
+              <span class="hero-pill">Clear breakdowns</span>
+              <span class="hero-pill">Mobile-friendly</span>
+            </div>
+            <ul class="hero-points">
+              <li>Instant monthly payment calculation</li>
+              <li>Clear amortization breakdown</li>
+              <li>Accessible on desktop and mobile</li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-shell">
+              <div class="hero-card-label">Plan with clarity</div>
+              <img src="assets/images/loan-hero.svg" alt="Illustration of a digital loan planning dashboard" width="640" height="480" loading="eager" />
+              <div class="hero-card-floating" aria-hidden="true">
+                <span>Fast</span>
+                <span>Accurate</span>
+                <span>Readable</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-muted" id="features" aria-labelledby="features-heading">
+      <section class="section" aria-labelledby="overview-heading">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Features</p>
-            <h2 id="features-heading">Designed for modern growth and maintainability</h2>
-            <p class="section-subtitle">The template supports SEO, analytics, search, dark mode, and future expansion without additional rewrites.</p>
+            <p class="eyebrow">Why borrowers use this tool</p>
+            <h2 id="overview-heading">A simple way to compare scenarios and plan repayment.</h2>
           </div>
-
-          <div class="features-grid">
-            <article class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🔎</div>
-              <h3>Search-ready</h3>
-              <p>Built-in search patterns for calculators and categories.</p>
+          <div class="grid cards">
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">⚡</span>
+              <h3>Fast and accurate</h3>
+              <p>Instantly estimate monthly payments based on principal, interest rate, and term length.</p>
             </article>
-            <article class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🌙</div>
-              <h3>Dark mode</h3>
-              <p>Theme switching support with persistent user preference.</p>
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">📊</span>
+              <h3>Transparent costs</h3>
+              <p>See total interest and total payoff so you can compare financing offers with confidence.</p>
             </article>
-            <article class="feature-item">
-              <div class="feature-icon" aria-hidden="true">📈</div>
-              <h3>Analytics ready</h3>
-              <p>Prepared for Google Analytics and Search Console tracking.</p>
-            </article>
-            <article class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🚀</div>
-              <h3>PWA ready</h3>
-              <p>Manifest and installable foundation included for the future.</p>
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">🧭</span>
+              <h3>Better planning</h3>
+              <p>Test different rates and terms to find a repayment plan that fits your budget.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="faq" aria-labelledby="faq-heading">
-        <div class="container">
+      <section class="section section-alt" aria-labelledby="guide-heading">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2 id="guide-heading">Understand your loan before you sign the agreement.</h2>
+            <p>Whether you are comparing a personal loan, car financing, or a home-equity option, a dependable <strong>loan calculator</strong> helps you understand what your monthly balance and repayment pattern look like over time.</p>
+            <p>By entering the loan amount, annual interest rate, and repayment term, you can quickly estimate your monthly payment and total interest. That makes it easier to plan your budget and evaluate whether the financing option is realistic for your goals.</p>
+          </div>
+          <div class="card">
+            <h3>Popular use cases</h3>
+            <ul class="check-list">
+              <li>Personal loan planning</li>
+              <li>Car loan comparison</li>
+              <li>Home loan budgeting</li>
+              <li>Debt payoff forecasting</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq-heading">
+        <div class="container faq-wrap">
           <div class="section-heading">
             <p class="eyebrow">FAQ</p>
-            <h2 id="faq-heading">Questions about the platform</h2>
-            <p class="section-subtitle">A simple structure that grows with your content library.</p>
+            <h2 id="faq-heading">Answers to common loan questions.</h2>
           </div>
-
-          <div class="faq-container">
+          <div class="faq-list">
             <article class="faq-item active">
-              <button class="faq-question" type="button" aria-expanded="true">
-                <span>Are the calculators free?</span>
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes. The core experience is designed to remain free and accessible for all users.</p>
-              </div>
+              <button class="faq-question" type="button" aria-expanded="true">What does a loan calculator estimate?</button>
+              <div class="faq-answer"><p>It estimates your projected monthly payment, total interest, and total repayment amount for a given loan.</p></div>
             </article>
             <article class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Can I add more calculators later?</span>
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div class="faq-answer">
-                <p>Absolutely. The folder structure and templates are built to support 1000+ calculators with consistent layout.</p>
-              </div>
+              <button class="faq-question" type="button" aria-expanded="false">Can I compare multiple loan terms?</button>
+              <div class="faq-answer"><p>Yes. Try different interest rates and lengths to see how payments change before you commit.</p></div>
             </article>
             <article class="faq-item">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Is the template optimized for SEO?</span>
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes. The homepage includes semantic markup, structured data, metadata, and reusable SEO blocks.</p>
-              </div>
+              <button class="faq-question" type="button" aria-expanded="false">Is this calculator suitable for a home loan?</button>
+              <div class="faq-answer"><p>It is helpful for estimating monthly obligations for many loan types, including home, car, and personal financing.</p></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-muted" id="newsletter" aria-labelledby="newsletter-heading">
-        <div class="container newsletter">
-          <h2 id="newsletter-heading">Get the latest calculator updates</h2>
-          <p>Subscribe for releases, new tools, and improvements to the platform.</p>
-          <form class="newsletter-form" id="newsletter-form">
-            <label class="sr-only" for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="Enter your email address" required />
-            <button type="submit">Subscribe</button>
-          </form>
-          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      <section class="section cta" aria-labelledby="cta-heading">
+        <div class="container cta-card">
+          <div>
+            <p class="eyebrow">Ready to calculate?</p>
+            <h2 id="cta-heading">Use the calculator to model your next borrowing decision.</h2>
+          </div>
+          <a class="btn btn-primary" href="loan-calculator.html">Start Calculating</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-cta">
-          <div>
-            <p class="eyebrow">Start building</p>
-            <h2>Scale your calculator site with a premium foundation.</h2>
-          </div>
-          <a class="btn btn-light" href="#content">Back to top</a>
+      <div class="container footer-grid">
+        <div>
+          <h2>Free Calculator Tools</h2>
+          <p>Practical calculators for everyday finance, planning, and decision-making.</p>
         </div>
-
-        <div class="footer-grid">
-          <div>
-            <a class="logo footer-logo" href="index.html">
-              <span class="logo-icon" aria-hidden="true">C</span>
-              <span class="logo-text">Free Calculator Tools</span>
-            </a>
-            <p class="footer-description">A modern platform for thousands of useful and accessible calculators.</p>
-          </div>
-          <div>
-            <h3>Explore</h3>
-            <ul class="footer-links">
-              <li><a href="#calculators">Popular calculators</a></li>
-              <li><a href="#categories">Categories</a></li>
-              <li><a href="pages/about.html">About</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Resources</h3>
-            <ul class="footer-links">
-              <li><a href="pages/privacy-policy.html">Privacy</a></li>
-              <li><a href="pages/terms-and-conditions.html">Terms</a></li>
-              <li><a href="pages/disclaimer.html">Disclaimer</a></li>
-            </ul>
-          </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan-calculator.html">Loan Calculator</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-
-        <div class="footer-bottom">
-          <p>© <span id="year"></span> Free Calculator Tools. All rights reserved.</p>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+          </ul>
         </div>
       </div>
     </footer>
 
-    <script src="js/utils.js"></script>
-    <script src="js/theme.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/app.js"></script>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Free Calculator Tools","url":"https://yogipedhadiya111.github.io/free-calculator-tools/","potentialAction":{"@type":"SearchAction","target":"https://yogipedhadiya111.github.io/free-calculator-tools/loan-calculator.html","query-input":"required name=search_term_string"}}</script>
+    <script src="js/main.js"></script>
+    <script src="js/seo.js"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://yogipedhadiya111.github.io/free-calculator-tools/sitemap.xml

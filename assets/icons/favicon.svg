@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Free Calculator Tools icon">
+  <rect width="128" height="128" rx="28" fill="#2563eb" />
+  <path d="M34 82c0-22 18-40 40-40h10v16H74c-13 0-24 10-24 24v6h-16v-6Z" fill="white" />
+  <path d="M46 28h36v16H46z" fill="#14b8a6" />
+  <path d="M40 94h48v10H40z" fill="white" opacity="0.9" />
+</svg>

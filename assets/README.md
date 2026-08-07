@@ -1,3 +1,3 @@
 # Assets
 
-This folder will hold shared static assets for the website.
+SVG illustrations and icons for the loan calculator site.

@@ -1,42 +1,31 @@
-/*
- * File: variables.css
- * Purpose: Design tokens, color palette, spacing, and typography scale.
- * Notes: This file defines the foundation for the master template.
- */
-
 :root {
-  --color-primary: #2563eb;
-  --color-secondary: #3b82f6;
-  --color-accent: #60a5fa;
-  --color-background: #f8fafc;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f1f5f9;
-  --color-text: #111827;
-  --color-text-muted: #64748b;
-  --color-border: #e5e7eb;
-  --color-success: #16a34a;
-  --color-warning: #f59e0b;
-  --color-danger: #dc2626;
-  --color-info: #0ea5e9;
-  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 16px 50px rgba(15, 23, 42, 0.12);
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  color-scheme: light;
   --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --color-background: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef4ff;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-accent: #14b8a6;
+  --color-border: #dbe3f0;
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  --radius: 24px;
   --container-width: 1200px;
-  --transition: all 0.25s ease;
+  --transition: 180ms ease;
 }
 
 [data-theme='dark'] {
+  color-scheme: dark;
   --color-background: #020617;
   --color-surface: #0f172a;
-  --color-surface-alt: #111827;
-  --color-text: #f8fafc;
+  --color-surface-alt: #111c35;
+  --color-text: #e2e8f0;
   --color-text-muted: #94a3b8;
-  --color-border: #334155;
-  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 16px 50px rgba(0, 0, 0, 0.38);
+  --color-primary: #60a5fa;
+  --color-primary-dark: #3b82f6;
+  --color-accent: #2dd4bf;
+  --color-border: #1e293b;
+  --shadow: 0 22px 60px rgba(2, 6, 23, 0.45);
 }

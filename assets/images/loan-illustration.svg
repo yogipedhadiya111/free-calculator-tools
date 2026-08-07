@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Loan schedule illustration">
+  <rect width="800" height="600" rx="36" fill="#f8fbff" />
+  <rect x="120" y="100" width="560" height="360" rx="30" fill="white" stroke="#dbe3f0" stroke-width="2" />
+  <path d="M180 390C230 320 310 270 400 270C490 270 560 220 620 150" stroke="#2563eb" stroke-width="10" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="390" r="12" fill="#14b8a6" />
+  <circle cx="620" cy="150" r="12" fill="#2563eb" />
+  <rect x="180" y="180" width="170" height="80" rx="18" fill="#eef4ff" />
+  <rect x="440" y="180" width="170" height="80" rx="18" fill="#eef4ff" />
+  <text x="220" y="222" text-anchor="middle" font-family="Inter, Arial" font-size="28" fill="#0f172a">Payment</text>
+  <text x="525" y="222" text-anchor="middle" font-family="Inter, Arial" font-size="28" fill="#0f172a">Balance</text>
+</svg>

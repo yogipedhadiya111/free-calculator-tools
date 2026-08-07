@@ -1,0 +1,11 @@
+{
+  "name": "Free Calculator Tools",
+  "short_name": "CalcTools",
+  "start_url": "/free-calculator-tools/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    {"src": "assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
